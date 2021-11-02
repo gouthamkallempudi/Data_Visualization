@@ -1,0 +1,42 @@
+-- Bokeh Documentation
+
+-----------------------------------------------------------------
+
+General process
+
+bokeh.plotting consists of open_notebook, figure and show
+
+open_notebook helps in creating plots inside jupyter notebook.
+
+1)  Create a figure using figure(**kwargs)
+
+2) Add glyph (line, circle to the data)
+
+3) Show the plot.
+
+------------------------------------------------------------------
+
+figure kwargs
+
+plot_widht             // width of plot
+plot_height            // height of plot
+title                  // title of the plot
+tools                  // tools that gets generated along with the plot (zoom, save image , refresh etc)
+x_axis_type            // String that takes the name of x-axis
+x_axis_location        // above or below
+y_axis_type            // String that takes the name of y-axis
+y_axis_location        // left or right
+x_range                // tuple that takes range of x-axis
+y_range                // tuple that takes range of y-axis
+
+
+
+
+--------------------------------------------------------------------
+
+figure functions
+
+line, circle
+
+line(source = dataframe, x = 'column-name in the dataframe', y = 'column-name in the dataframe')
+
